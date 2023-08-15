@@ -4,7 +4,7 @@ pipeline {
         stage("Stage 1 -Source"){
             steps {
                 echo "Githubからcheckout"
-                echo "PushしたらCIが回るか検証3.5"
+                echo "PushしたらCIが回るか検証4"
                 git url: 'https://github.com/Sato-2525/jenkins-sample.git', branch: 'main', credentialsId: '4e6b1826-1552-497c-ba9a-232595a4e5ff'
                 // Change file permisson
                 sh "ls -la maya_sato_hello"
